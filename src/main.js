@@ -5,8 +5,6 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 // router
 import router from './router.js'
-// ajax
-import './api.js'
 // config
 import { global } from './mixin.js'
 
