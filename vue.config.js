@@ -4,6 +4,7 @@ const resolve = require('path').resolve
 module.exports = {
     // 选项...
     baseUrl: './',
+    outputDir: 'docs',
     chainWebpack: config => {
         config.resolve.alias
             .set('comp', resolve(__dirname, './src/components'))
