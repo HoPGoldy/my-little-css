@@ -39,10 +39,15 @@ export default {
     name: 'Index',
     data: () => ({
         menuList: [
+            // {
+            //     title: '滚动标题',
+            //     content: '默认情况下显示页头，向下滚动后显示其他信息',
+            //     route: 'MoveTitle'
+            // },
             {
-                title: '滚动标题',
-                content: '默认情况下显示页头，向下滚动后显示其他信息',
-                route: 'MoveTitle'
+                title: '十字高亮',
+                content: '在表格中常见的悬停时横轴纵轴十字交叉高亮',
+                route: 'CrossHighlight'
             }
         ]
     }),
