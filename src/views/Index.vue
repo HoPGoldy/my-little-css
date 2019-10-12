@@ -23,6 +23,7 @@ $mobile-width = 450px
             +mediaMobile()
                 width 100%
             height 250px
+            margin 23px 0px
         
 </style>
 
@@ -48,6 +49,11 @@ export default {
                 title: '十字高亮',
                 content: '在表格中常见的悬停时横轴纵轴十字交叉高亮',
                 route: 'CrossHighlight'
+            },
+            {
+                title: '审批流',
+                content: '工作流程/审批流程/进度显示中常见的列表样式',
+                route: 'ApprovalFlow'
             }
         ]
     }),

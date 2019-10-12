@@ -9,6 +9,7 @@ module.exports = {
         config.resolve.alias
             .set('comp', resolve(__dirname, './src/components'))
             .set('styles', resolve(__dirname, './src/styles'))
+            .set('images', resolve(__dirname, './src/images'))
 
         const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
         types.forEach(type => addStyleResource(config.module.rule('stylus').oneOf(type)))
