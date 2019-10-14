@@ -2,19 +2,25 @@
 .section-title-container
     display flex
     flex-flow column nowrap
+    justify-content space-around
 
-    .title
-        font-weight bolder
-        font-size 25px
-    .sub-title
-        color #888
+    .vertical-center-box
+        display flex
+        flex-flow column nowrap
+
+        .title
+            font-weight bolder
+            font-size 20px
+        .sub-title
+            color #888
 </style>
 
 <template lang="pug">
 .section-title-container
-    img(:src="detail.img")
-    .title(:style='{ color: color }') {{detail.value}}
-    .sub-title {{detail.sub}}
+    .vertical-center-box
+        img(:src="detail.img")
+        .title(:style='{ color: color }') {{detail.value}}
+        .sub-title {{detail.sub}}
 </template>
 
 <script>

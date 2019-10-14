@@ -3,27 +3,42 @@
     background-color #f2f8fc
 
     .section-item
-        margin 16px 0px
+        margin 8px 0px
+    .split-dot
+        display flex
+        flex-flow column nowrap
+
+    & > .split-dot::after
+        content ''
+        height 30px
+        width 10px
+        padding-left 100px
+        border-right 10px dotted #d8dadb
 </style>
 
 <template lang="pug">
 .flow-container
-    section-item.section-item(v-for="section, index in detail.sections" :index="index" :detail='section')
+    .split-dot
+        single-msg(:msg='detail.nowMsg' :icon="nowMsgIcon")
+    .split-dot(v-for="section, index in detail.sections" :key="index" )
+        section-item.section-item(:detail='section')
+    single-msg(:msg='detail.startMsg')
 </template>
 
 <script>
 import SectionItem from './SectionItem'
+import SingleMsg from './SingleMsg'
 
 export default {
     name: 'Flow',
     data: () => ({
-        
+        nowMsgIcon: require('images/ApprovalFlow/now.svg')
     }),
     props: {
         /**
          * 审批流所需数据
          * 
-         * @property {string} starMsg 开始时的信息，显示在最下面
+         * @property {string} startMsg 开始时的信息，显示在最下面
          * @property {string} nowMsg 当前的信息，显示在最上面
          * @property {array} sections 阶段，下面测试数据一共包含三个阶段：业务审批/财务审核/资金付款
          *     @property {string} color 该阶段的主要颜色
@@ -41,7 +56,7 @@ export default {
             required: true
         }
     },
-    components: { SectionItem },
+    components: { SectionItem, SingleMsg },
     methods: {
 
     },

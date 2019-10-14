@@ -3,6 +3,11 @@
     padding 0px 12px
     display flex
     position relative
+
+    .stage-list
+        display flex
+        flex-flow column
+        justify-content space-around
 </style>
 
 <template lang="pug">
@@ -10,7 +15,7 @@
     section-title(:detail='detail.title' :color='detail.color')
     split-bar(:nodes='detail.stage.map(stage => stage.done)' :color='detail.color')
     .stage-list
-        detail-msg(v-for="stage, index in detail.stage" :index="index" :detail='stage')
+        detail-msg(v-for="stage, index in detail.stage" :key="index" :detail='stage')
 </template>
 
 <script>
@@ -47,11 +52,6 @@ export default {
         }
     },
     components: { SectionTitle, DetailMsg, SplitBar },
-    methods: {
-
-    },
-    mounted() {
-        console.log('阶段！', this.detail)
-    }
+    methods: { }
 }
 </script>

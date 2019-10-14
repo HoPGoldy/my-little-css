@@ -4,11 +4,16 @@
     height 100%
     width 100%
     margin 64px 0px
+    display flex
+    justify-content center
+
+    .border
+        padding 32px
 </style>
 
 <template lang="pug">
 .approval-flow-container
-    flow(:detail="flowData")
+    flow.border(:detail="flowData")
 </template>
 
 <script>

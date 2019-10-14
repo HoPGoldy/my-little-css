@@ -5,7 +5,6 @@
     padding 8px
 
     .msg
-        font-weight bolder
         font-size 20px
         text-align left
     .sub-msg
@@ -17,7 +16,7 @@
 <template lang="pug">
 .detail-msg-container
     .msg(:style='msgStyle') {{detail.value}}
-    .sub-msg {{detail.sub}}
+    .sub-msg(:style='subStyle') {{detail.sub}}
 </template>
 
 <script>
@@ -49,6 +48,15 @@ export default {
         msgStyle() {
             return {
                 color: this.detail.done ? '#888' : ''
+            }
+        },
+        /**
+         * sub 提示信息的样式
+         * 如果为空的话则不显示
+         */
+        subStyle() {
+            return {
+                display: this.detail.sub ? 'inline' : 'none'
             }
         }
     },

@@ -10,11 +10,12 @@
     display flex
     flex-flow column nowrap
     justify-content space-around
+    min-height 110px
 </style>
 
 <template lang="pug">
 .split-bar-container(:style="{ backgroundColor: color }")
-    img.icon(v-for='done, index in nodes' :index='index' :src="done ? successIcon : loadIcon")
+    img.icon(v-for='done, index in nodes' :key='index' :src="done ? successIcon : loadIcon")
 </template>
 
 <script>
