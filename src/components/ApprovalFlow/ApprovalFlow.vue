@@ -1,9 +1,9 @@
 <style scoped lang="stylus">
 .approval-flow-container
-    // 下面这些都是为了好看才设置的样式 不要管
     height 100%
     width 100%
     margin 64px 0px
+.flex
     display flex
     justify-content center
 
@@ -13,7 +13,9 @@
 
 <template lang="pug">
 .approval-flow-container
-    flow.border(:detail="flowData")
+    .flex
+        flow.border(:detail="flowData")
+    page-footer(v-bind='footerInfo')
 </template>
 
 <script>
@@ -77,6 +79,11 @@ export default {
                     ]
                 }
             ]
+        },
+        // 页脚信息
+        footerInfo: {
+            codeLabel: 'hopgoldy - my-little-css/ApprovalFlow',
+            codeUrl: 'https://github.com/HoPGoldy/my-little-css/blob/master/src/components/ApprovalFlow/ApprovalFlow.vue'
         }
     }),
     components: { Flow },

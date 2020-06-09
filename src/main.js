@@ -5,8 +5,11 @@ import router from './router.js'
 // config
 import { global } from './mixin.js'
 
+import PageFooter from './components/PageFooter'
+
 Vue.config.productionTip = false
 Vue.mixin(global)
+Vue.component('PageFooter', PageFooter)
 
 new Vue({
     router,

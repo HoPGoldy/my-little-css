@@ -134,6 +134,7 @@
                 span.fab(:class='button.icon')
             //- 按钮名称
             span.text {{button.label}}
+    page-footer(v-bind='footerInfo')
 </template>
 
 <script>
@@ -152,7 +153,14 @@ export default {
             { icon: 'fa-instagram', label: 'Instagram' },
             { icon: 'fa-linkedin-in', label: 'Linkedin' },
             { icon: 'fa-youtube', label: 'Youtube' }
-        ]
+        ],
+        // 页脚信息
+        footerInfo: {
+            originLabel: 'bilibili - 按钮 3D 分层悬停效果',
+            originUrl: 'https://www.bilibili.com/video/BV1g5411x7Cy',
+            codeLabel: 'hopgoldy - my-little-css/HoverSocialButton',
+            codeUrl: 'https://github.com/HoPGoldy/my-little-css/blob/master/src/components/HoverSocialButton.vue'
+        }
     })
 }
 </script>

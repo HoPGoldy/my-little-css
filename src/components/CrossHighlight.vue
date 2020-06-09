@@ -1,9 +1,9 @@
 <style scoped lang="stylus">
 .cross-container
-    // 下面这些都是为了好看才设置的样式 不要管
     height 100%
     width 100%
     margin 64px 0px
+.flex
     display flex
     justify-content center
 
@@ -28,11 +28,13 @@
 
 <template lang="pug">
 .cross-container
-    .table(@mouseout="onMouseOut")
-        //- 行元素
-        .row(v-for="rowIndex in 5" :key="rowIndex")
-            //- 列元素
-            .col.not-active(v-for="colIndex in 12" :key="colIndex" @mouseover="onMouseOver(rowIndex - 1, colIndex - 1)")
+    .flex
+        .table(@mouseout="onMouseOut")
+            //- 行元素
+            .row(v-for="rowIndex in 5" :key="rowIndex")
+                //- 列元素
+                .col.not-active(v-for="colIndex in 12" :key="colIndex" @mouseover="onMouseOver(rowIndex - 1, colIndex - 1)")
+    page-footer(v-bind='footerInfo')
 </template>
 
 <script>
@@ -42,6 +44,11 @@ export default {
         hoverIndex: {
             col: null,
             row: null
+        },
+        // 页脚信息
+        footerInfo: {
+            codeLabel: 'hopgoldy - my-little-css/CrossHighlight',
+            codeUrl: 'https://github.com/HoPGoldy/my-little-css/blob/master/src/components/CrossHighlight.vue'
         }
     }),
     watch: {
