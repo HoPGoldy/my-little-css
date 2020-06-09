@@ -54,6 +54,11 @@ export default {
                 title: '审批流',
                 content: '工作流程/审批流程/进度显示中常见的列表样式',
                 route: 'ApprovalFlow'
+            },
+            {
+                title: '3D 分层按钮',
+                content: '悬停显示 3D 效果',
+                route: 'HoverSocialButton'
             }
         ]
     }),
