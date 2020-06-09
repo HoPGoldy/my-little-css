@@ -1,7 +1,7 @@
 // vue-router
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-Vue.use(VueRouter)
+if (!window.VueRouter) Vue.use(VueRouter)
 
 import Index from './views/Index'
 import MoveTitle from './components/MoveTitle'

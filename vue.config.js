@@ -10,6 +10,33 @@ module.exports = {
             .set('comp', resolve(__dirname, './src/components'))
             .set('styles', resolve(__dirname, './src/styles'))
             .set('images', resolve(__dirname, './src/images'))
+        
+        if (process.env.use_analyzer) {
+            config
+                .plugin('webpack-bundle-analyzer')
+                .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+        }
+
+        config
+            .plugin('html-webpack-plugin')
+            .use(require('html-webpack-plugin'))
+        config
+            .plugin('webpack-cdn-plugin')
+            .use(require('webpack-cdn-plugin'), [{
+                modules: [
+                    {
+                        name: 'vue',
+                        var: 'Vue',
+                        path: 'vue.min.js'
+                    },
+                    {
+                        name: 'vue-router',
+                        var: 'VueRouter',
+                        path: 'vue-router.min.js'
+                    }
+                ],
+                prodUrl: '//cdn.bootcdn.net/ajax/libs/:name/:version/:path'
+            }])
 
         const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
         types.forEach(type => addStyleResource(config.module.rule('stylus').oneOf(type)))
