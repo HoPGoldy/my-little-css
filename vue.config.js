@@ -3,7 +3,7 @@ const resolve = require('path').resolve
 // vue.config.js
 module.exports = {
     // 选项...
-    baseUrl: './',
+    baseUrl: './my-little-css/',
     outputDir: 'docs',
     chainWebpack: config => {
         config.resolve.alias
