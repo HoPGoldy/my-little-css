@@ -20,7 +20,9 @@ module.exports = {
 
         config
             .plugin('html-webpack-plugin')
-            .use(require('html-webpack-plugin'))
+            .use(require('html-webpack-plugin'), [{
+                publicPath: `/${require('./package.json').name}/`,
+            }])
         config
             .plugin('webpack-cdn-plugin')
             .use(require('webpack-cdn-plugin'), [{
