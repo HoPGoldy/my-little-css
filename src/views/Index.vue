@@ -1,35 +1,42 @@
 <style lang="stylus" scoped>
-$mobile-width = 450px
 .index-container
     .header
         background-color #b3d1cc
         padding 16px
-        font-size 18px
         font-weight bolder
         box-shadow #eee 0px 0px 5px 3px
-        +mediaDesktop()
-            text-align left
-        +mediaMobile()
+        +small()
             text-align center
+            font-size 16px
+        +large()
+            text-align left
+            font-size 23px
+
     .main
-        margin 64px
+        margin 32px
         display flex
         flex-flow row wrap
-        justify-content space-between
+        justify-content flex-start
 
         .item
-            +mediaDesktop()
-                width 400px
-            +mediaMobile()
+            +small()
                 width 100%
-            height 250px
-            margin 23px 0px
-        
+                height 150px
+                margin 0px 8px 16px 8px
+            +medium()
+                width 41%
+                height 180px
+                margin 4%
+            +large()
+                width 21%
+                height 180px
+                margin 2%
+
 </style>
 
 <template lang="pug">
 .index-container
-    .header hopgoldy 的 CSS 小玩意
+    .header CSS 样式合集
     .main
         project-item.item(v-for="item, index in menuList" :key="index" :detail="item")
 </template>

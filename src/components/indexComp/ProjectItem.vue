@@ -39,10 +39,12 @@
         // 标题样式
         .project-title
             transition all .2s
-            +mediaDesktop()
-                font-size 33px
-            +mediaMobile()
+            +small()
                 font-size 23px
+            +medium()
+                font-size 26px
+            +large()
+                font-size 33px
             font-weight bolder
             padding 18px
         // 分割线样式
@@ -58,12 +60,12 @@
             opacity 0
             margin-left 20px
             padding 18px
-            +mediaMobile()
+            +small()
                 font-size 15px
 </style>
 
 <template lang="pug">
-.project-item(@click="jumpTo")
+.project-item(@click="$router.push(detail.route)")
     img.background-pic(:src="detail.pic")
     .font
         .project-title {{detail.title}}
@@ -88,14 +90,6 @@ export default {
             type: Object,
             required: true
         }
-    },
-    data: () => ({
-        
-    }),
-    methods: {
-        jumpTo() {
-            this.$router.push(this.detail.route)
-        }
-    },
+    }
 }
 </script>
