@@ -55,22 +55,26 @@ export default {
             {
                 title: '十字高亮',
                 content: '在表格中常见的悬停时横轴纵轴十字交叉高亮',
-                route: 'CrossHighlight'
+                route: 'CrossHighlight',
+                pic: 'https://s1.ax1x.com/2020/07/24/Uv3LEn.png'
             },
             {
                 title: '审批流',
                 content: '工作流程/审批流程/进度显示中常见的列表样式',
-                route: 'ApprovalFlow'
+                route: 'ApprovalFlow',
+                pic: 'https://s1.ax1x.com/2020/07/24/Uv3X40.png'
             },
             {
                 title: '3D 分层按钮',
                 content: '悬停显示 3D 效果',
-                route: 'HoverSocialButton'
+                route: 'HoverSocialButton',
+                pic: 'https://s1.ax1x.com/2020/07/24/Uv3ONq.png'
             },
             {
                 title: '视差滚动',
                 content: '漂亮的页面滚动效果',
-                route: 'ParallaxScroll'
+                route: 'ParallaxScroll',
+                pic: 'https://s1.ax1x.com/2020/07/24/Uv3vCV.png'
             }
         ]
     }),
