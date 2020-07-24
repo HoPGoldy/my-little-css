@@ -1,6 +1,6 @@
 <style scoped lang="stylus">
 .footer-container
-    padding-top 64px
+    padding 64px 0px 16px 0px
     width 100%
 
     span, a

@@ -8,6 +8,7 @@ import MoveTitle from './components/MoveTitle'
 import CrossHighlight from './components/CrossHighlight'
 import ApprovalFlow from './components/ApprovalFlow/ApprovalFlow'
 import HoverSocialButton from './components/HoverSocialButton'
+import ParallaxScroll from './components/ParallaxScroll'
 
 const routes = [
     { path: '/', component: Index },
@@ -15,8 +16,7 @@ const routes = [
     { path: '/CrossHighlight', component: CrossHighlight },
     { path: '/ApprovalFlow', component: ApprovalFlow },
     { path: '/HoverSocialButton', component: HoverSocialButton },
+    { path: '/ParallaxScroll', component: ParallaxScroll },
 ]
 
-export default new VueRouter({
-  routes
-})
+export default new VueRouter({ routes })

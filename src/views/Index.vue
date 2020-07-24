@@ -59,6 +59,11 @@ export default {
                 title: '3D 分层按钮',
                 content: '悬停显示 3D 效果',
                 route: 'HoverSocialButton'
+            },
+            {
+                title: '视差滚动',
+                content: '漂亮的页面滚动效果',
+                route: 'ParallaxScroll'
             }
         ]
     }),
