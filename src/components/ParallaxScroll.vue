@@ -106,32 +106,32 @@ export default {
     data: () => ({
         imgList: [
             {
-                src: 'https://miiiku.github.io/shichagundong/images/1.jpg',
+                src: 'https://s1.ax1x.com/2020/07/24/UjYU6U.jpg',
                 title: '「四月是你的谎言」',
                 describe: '我在盛开的樱花下遇见你，从此命运不再属于自己。'
             },
             {
-                src: 'https://miiiku.github.io/shichagundong/images/2.jpg',
+                src: 'https://s1.ax1x.com/2020/07/24/UjYJf0.jpg',
                 title: '「言叶之庭」',
                 describe: '每晚临睡前 每天睁开眼的瞬间 不知不觉 我都在祈盼雨天 祈盼雨天 祈盼和那个人 再次相会'
             },
             {
-                src: 'https://miiiku.github.io/shichagundong/images/3.jpg',
+                src: 'https://s1.ax1x.com/2020/07/24/UjYwm4.jpg',
                 title: '「你的名字」',
                 describe: '黄昏，不是白昼亦不是夜晚，是我努力却看不清你的脸。'
             },
             {
-                src: 'https://miiiku.github.io/shichagundong/images/4.jpg',
+                src: 'https://s1.ax1x.com/2020/07/24/UjYtpV.jpg',
                 title: '「天气之子」',
                 describe: '天气真的是很不可思议，光只是天空的模样就让人感动不已。'
             },
             {
-                src: 'https://miiiku.github.io/shichagundong/images/5.jpg',
+                src: 'https://s1.ax1x.com/2020/07/24/UjYNlT.jpg',
                 title: '「K-ON！」',
                 describe: '重要的，珍惜的，一直在身边，一旦成为理所当然，就难以发现'
             },
             {
-                src: 'https://miiiku.github.io/shichagundong/images/6.jpg',
+                src: 'https://s1.ax1x.com/2020/07/24/UjYaXF.png',
                 title: '「CLANNAD」',
                 describe: '我也很没用，但是两个人一起的话，就会变得很坚强。'
             }
