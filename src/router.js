@@ -4,21 +4,12 @@ import VueRouter from 'vue-router'
 if (!window.VueRouter) Vue.use(VueRouter)
 
 import Index from './views/Index'
-import MoveTitle from './components/MoveTitle'
-import CrossHighlight from './components/CrossHighlight'
-import ApprovalFlow from './components/ApprovalFlow/ApprovalFlow'
-import HoverSocialButton from './components/HoverSocialButton'
-import ParallaxScroll from './components/ParallaxScroll'
-import HoverReverse from './components/HoverReverse' 
+import comps from './components'
 
 const routes = [
     { path: '/', component: Index },
-    { path: '/MoveTitle', component: MoveTitle },
-    { path: '/CrossHighlight', component: CrossHighlight },
-    { path: '/ApprovalFlow', component: ApprovalFlow },
-    { path: '/HoverSocialButton', component: HoverSocialButton },
-    { path: '/ParallaxScroll', component: ParallaxScroll },
-    { path: '/HoverReverse', component: HoverReverse },
+    // 给要展示的组件配置路由
+    ...Object.keys(comps).map(name => ({ path: `/${name}`, component: comps[name] }))
 ]
 
 export default new VueRouter({ routes })
