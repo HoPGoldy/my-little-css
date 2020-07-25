@@ -74,7 +74,6 @@ section
 </style>
 
 <template lang="pug">
-.
 .hover-reverse-container
     .flex-center
         section.flex-center

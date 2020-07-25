@@ -87,7 +87,7 @@ export default {
                 title: '悬停展开',
                 content: '悬停时展开卡片并显示文本信息',
                 route: 'HoverRundfold',
-                pic: 'https://s1.ax1x.com/2020/07/25/UzUxFe.png'
+                pic: 'https://s1.ax1x.com/2020/07/25/Uz4deO.png'
             }
         ]
     }),
