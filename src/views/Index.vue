@@ -60,7 +60,7 @@ export default {
             },
             {
                 title: '审批流',
-                content: '工作流程/审批流程/进度显示中常见的列表样式',
+                content: '工作流程 / 审批流程 / 进度显示中常见的列表样式',
                 route: 'ApprovalFlow',
                 pic: 'https://s1.ax1x.com/2020/07/24/Uv3X40.png'
             },
@@ -75,6 +75,12 @@ export default {
                 content: '漂亮的页面滚动效果',
                 route: 'ParallaxScroll',
                 pic: 'https://s1.ax1x.com/2020/07/24/Uv3vCV.png'
+            },
+            {
+                title: '悬停反转',
+                content: '卡片悬停时进行 3D 反转并显示文本信息',
+                route: 'HoverReverse',
+                pic: 'https://s1.ax1x.com/2020/07/25/UzUxFe.png'
             }
         ]
     }),

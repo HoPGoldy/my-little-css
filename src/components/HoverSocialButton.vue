@@ -13,6 +13,7 @@
     justify-content center
 
 .icons .button
+    cursor pointer
     // 按钮之间的间距
     margin 0 25px
     // 子孙元素的 absolute 基础定位
@@ -87,7 +88,7 @@
     border-color #2867B2
 
 .icons .button:nth-child(5) .layer span,
-.icons .button:nth-child(6) .text
+.icons .button:nth-child(5) .text
     color #ff0000
     border-color #ff0000
 
@@ -134,6 +135,7 @@
                 span.fab(:class='button.icon')
             //- 按钮名称
             span.text {{button.label}}
+
     page-footer(v-bind='footerInfo')
 </template>
 

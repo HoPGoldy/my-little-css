@@ -9,6 +9,7 @@ import CrossHighlight from './components/CrossHighlight'
 import ApprovalFlow from './components/ApprovalFlow/ApprovalFlow'
 import HoverSocialButton from './components/HoverSocialButton'
 import ParallaxScroll from './components/ParallaxScroll'
+import HoverReverse from './components/HoverReverse' 
 
 const routes = [
     { path: '/', component: Index },
@@ -17,6 +18,7 @@ const routes = [
     { path: '/ApprovalFlow', component: ApprovalFlow },
     { path: '/HoverSocialButton', component: HoverSocialButton },
     { path: '/ParallaxScroll', component: ParallaxScroll },
+    { path: '/HoverReverse', component: HoverReverse },
 ]
 
 export default new VueRouter({ routes })
