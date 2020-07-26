@@ -88,6 +88,12 @@ export default {
                 content: '悬停时展开卡片并显示文本信息',
                 route: 'HoverRundfold',
                 pic: 'https://s1.ax1x.com/2020/07/25/Uz4deO.png'
+            },
+            {
+                title: '波浪表单',
+                content: '鼠标移入和移出表单时会有波纹效果',
+                route: 'WaveLogin',
+                pic: 'https://s1.ax1x.com/2020/07/26/apiiVO.png'
             }
         ]
     }),
